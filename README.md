@@ -42,9 +42,14 @@ de branches ficar abaixo de 100%.
 
 ## Como executar
 
+Só é preciso ter o Java instalado. O Maven Wrapper baixa o Maven 3.9.11 automaticamente:
+
 ```bash
-mvn verify
+./mvnw verify        # Linux/macOS
+mvnw.cmd verify      # Windows
 ```
+
+Se você tiver o Maven instalado, `mvn verify` também funciona.
 
 - Resultado dos testes: `target/surefire-reports/`
 - Relatório de cobertura: `target/site/jacoco/index.html`
